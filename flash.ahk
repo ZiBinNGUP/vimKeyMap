@@ -2,16 +2,14 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
-$space::send,{space} ; allow spaces still  
+CapsLock & j::Down
+CapsLock & k::Up
+CapsLock & l::Right
+CapsLock & h::Left
+CapsLock & 4::End
+CapsLock & 6::Home
 
-Space & j::Down
-Space & k::Up
-Space & l::Right
-Space & h::Left
-Space & 4::End
-Space & 6::Home
-
-Space & b:: Run, https://fanyi.baidu.com
+CapsLock & b:: Run, https://fanyi.baidu.com
 
 #If GetKeyState("CapsLock", "T")
 k::Up
